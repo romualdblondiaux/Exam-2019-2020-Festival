@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Examen Webdev1 2020</title>
+</head>
+<body>
+    <div id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#info">Information</a></li>
+            <li><a href="#dj">DJ</a></li>
+            <li><a href="#live">Live</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const burger = document.querySelector('#burger')
+        const menu = document.querySelector('#menu')
+       
+        burger.addEventListener('click',()=>{
+            burger.classList.toggle('open')
+            menu.classList.toggle('open-menu')
+            
+        })
+    </script>
+
+    <div class="slide" id="home">
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">Information</a></li>
+                <li><a href="#dj">DJ</a></li>
+                <li><a href="#live">Live</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="fond">
+            <div class="boite">
+                <h1>Festival Electro-House</h1>
+                <h2>25-26-27 September 2020</h2>
+                <h1>Sportpaleis Antwerpen</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide2" id="info">
+        <div class="image2"></div>
+        <div class="container">
+                <div class="rect">
+                    <h1>Information Event</h1>
+                    <p>For this first edition, the Elecro-House Festival will take place at the Antwerp SportsPalais from 25 to 27 September 2020 with 56 hours of non-stop mixing and 10 of the greatest DJs of the moment.</p>
+                    <p>This edition promises to be breathtaking both by its music and by the play of lights and the decor of the stage.</p>  
+                    <p>With its profits, the festival aims to support actions to protect nature and endangered animal species and actions to fight against the abandonment of animals. The names of the first five artists were unveiled this Saturday. To tell us about this new appointment, we welcome Armin Van Buuren, Hardwell ans many more.</p>
+                </div>
+                           
+        </div>
+        <div class="image2b"></div>
+    </div>
+    <div class="slide3" id="dj">
+        <div class="image3"></div>
+            <div class="photos">
+                <div class="cadre">
+                   <div class="taille" id="photo1"></div>
+                    <p>Armin Van Buuren</p>
+                </div>
+                <div class="cadre">
+                    <div class="taille" id="photo2"></div>
+                     <p>Laurent Garnier</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo3"></div>
+                     <p>Nina Kraviz</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo4"></div>
+                     <p>Tïesto</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo5"></div>
+                     <p>Bob Sinclar</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo6"></div>
+                     <p>Skrillex</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo7"></div>
+                     <p>Martin Garrix</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo8"></div>
+                     <p>Hardwell</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo9"></div>
+                     <p>Avicii</p>
+                 </div>
+                 <div class="cadre">
+                    <div class="taille" id="photo10"></div>
+                     <p>Afrojack</p>
+                 </div>
+                
+            </div>
+        <div class="image3b"></div>
+    </div>
+
+    <div class="slide4" id="live">
+        <div class="image4"></div>
+        <div class="planning">
+            <div id="date1">Vri 25 Sept.</div>
+            <div id="date2">Sat 26 Sept.</div>
+            <div id="date3">Sun 27 Sept.</div>
+            <div id="heure1"><p>00:00</p></div>
+            <div id="ligne1"></div>
+            <div id="heure2"><p>02:00</p></div>
+            <div id="ligne2"></div>
+            <div id="heure3"><p>04:00</p></div>
+            <div id="ligne3"></div>
+            <div id="heure4"><p>06:00</p></div>
+            <div id="ligne4"></div>
+            <div id="heure5"><p>08:00</p></div>
+            <div id="ligne5"></div>
+            <div id="heure6"><p>10:00</p></div>
+            <div id="ligne6"></div>
+            <div id="heure7"><p>12:00</p></div>
+            <div id="ligne7"></div>
+            <div id="heure8"><p>14:00</p></div>
+            <div id="ligne8"></div>
+            <div id="heure9"><p>16:00</p></div>
+            <div id="ligne9"></div>
+            <div id="heure10"><p>18:00</p></div>
+            <div id="ligne10"></div>
+            <div id="heure11"><p>20:00</p></div>
+            <div id="ligne11"></div>
+            <div id="heure12"><p>22:00</p></div>
+            <div id="ligne12"></div>
+            <div id="heure13"><p>00:00</p></div>
+            <div id="ligne13"></div>
+
+            <div id="block1"><p>Afrojack</p></div>
+            <div id="block2"><p>Avicii</p></div>
+            <div id="block3"><p>Nina Kraviz</p></div>
+            <div id="block4"><p>Hardwell</p></div>
+            <div id="block5"><p>Tïesto</p></div>
+            <div id="block6"><p>Skrillex</p></div>
+            <div id="block7"><p>Martin</p></div>
+            <div id="block7b"><p>Garrix</p></div>
+            <div id="block8"><p>Bob Sinclar</p></div>
+            <div id="block9"><p>Laurent</p></div>
+            <div id="block9b"><p>Garnier</p></div>
+            <div id="block10"><p>Armin</p></div>
+            <div id="block10b"><p>Van Buuren</p></div>
+            <div id="block11"><p>Afrojack</p></div>
+            <div id="block12"><p>Hardwell</p></div>
+            <div id="block13"><p>Nina Kraviz</p></div>
+            <div id="block14"><p>Martin</p></div>
+            <div id="block14b"><p>Garrix</p></div>
+        </div>
+    </div>
+    
+    <div class="slide5" id="contact">
+        <div class="image5"></div>
+            <div class="sale">
+                <p>Ticket sales will begin on Thursday, June 19 at 10:00 a.m.</p>
+                <p>Tickets: € 120</p>
+                <p>Please note that there is an additional service charge of 5 euros per ticket when purchasing tickets at the ticket office.</p>
+                <p>Important message : You will receive your tickets at the earliest 4 weeks before the event.</p>
+                <p>Antwerps Sportpaleis - Schijnpoortweg 119, 2170 Merksem - téléphone +32 3 456 78 90</p>
+                <div class="bouton">
+                    <p>
+                     <a href="https://www.ticketmaster.be">Ticket Sales</a>
+                   </p>
+                  </div>
+                
+            </div>
+        <div class="partners">
+           <div class="ligne"></div><h1> Partners </h1><div class="ligne"></div>
+                <div class="logopart">
+                    <img src="images/Logo-eristoff.png" alt="eristoff">
+                    <img src="images/logo-Proximus.png" alt="proximus">
+                    <img src="images/logo-cocacola.png" alt="coca cola">
+                    <img src="images/logo-redbull.png" alt="red bull">
+                </div>
+           <div class="ligne2"></div>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/?hl=fr"><img src="images/logo-instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/explore"><img src="images/logo-twitter.png" alt="twitter"></a>
+            <a href="https://fr-fr.facebook.com/"><img src="images/logo-facebook.png" alt="facebook"></a>
+            
+        </div>
+        
+    </div>
+        <footer>
+            <p>Mentions legal - &copy; Copyright WebDev1 EPSE Romuald 2020</p>
+        </footer>
+</body>
+</html>
